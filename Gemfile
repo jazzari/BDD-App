@@ -33,6 +33,7 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'rspec-rails', '~> 3.5'
   gem 'cucumber-rails', require: false
+  gem 'cucumber-expressions', git: 'https://github.com/cucumber/cucumber', ref: '8ffca85', glob: 'cucumber-expressions/ruby/*.gemspec'
   gem 'shoulda-matchers'
   gem 'factory_bot_rails'
 end

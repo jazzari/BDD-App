@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+set -euf -o pipefail
+
+arch=$1
+
+if [ $arch = "net45" ]; then
+    starter="mono"
+    ext="exe"
+elif [ $1 = "netcoreapp2.0" ]; then
+    starter="dotnet"
+    ext="dll"
+else
+    echo "afdjaölsdk architecture"
+    exit 1
+fi
+
+$starter "Gherkin.CLI/bin/Debug/$arch/Gherkin.CLI.$ext" "${@:2}"

@@ -1,0 +1,4 @@
+coverage/
+dist/
+yarn.lock
+.nyc_output/

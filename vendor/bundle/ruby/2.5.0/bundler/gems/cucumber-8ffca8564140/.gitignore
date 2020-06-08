@@ -1,0 +1,11 @@
+.DS_Store
+node_modules/
+_book/
+.idea/
+**/*/.release/
+cucumber_manyrepo_id_rsa
+cucumber_manyrepo_id_rsa.pub
+.rsynced
+.built
+yarn-error.log
+/.vs
